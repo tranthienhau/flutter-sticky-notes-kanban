@@ -35,9 +35,9 @@ class BoardScreen extends ConsumerWidget {
                 child: Stack(
                   children: [
                     _LaneDividers(),
-                    ...notes.map((n) => SizedBox(
+                    ...notes.map((n) => _DraggableNote(
                           key: ValueKey(n.id),
-                          child: _DraggableNote(note: n),
+                          note: n,
                         )),
                   ],
                 ),
@@ -109,7 +109,7 @@ class _LaneDividers extends StatelessWidget {
 
 class _DraggableNote extends ConsumerStatefulWidget {
   final StickyNote note;
-  const _DraggableNote({required this.note});
+  const _DraggableNote({super.key, required this.note});
 
   @override
   ConsumerState<_DraggableNote> createState() => _DraggableNoteState();
