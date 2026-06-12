@@ -2,6 +2,16 @@
 
 Tactile sticky-note planning POC. Drag/drop notes onto a 7-day timeline, "rip" notes to complete (with escalating haptics), full-screen edit zoom, priority colors, local Hive persistence.
 
+## Demo
+
+Real captures from the running app on the iOS Simulator (not mockups). See [FLOW.md](FLOW.md) for how they are generated.
+
+| Week board | Zoom editor | Priority picker |
+| --- | --- | --- |
+| ![Week board](screenshots/01-week-board.png) | ![Zoom editor](screenshots/02-zoom-editor.png) | ![Priority picker](screenshots/03-priority-picker.png) |
+
+![Demo](screenshots/demo.gif)
+
 ## Features
 
 - Draggable sticky notes with snapping to weekday lanes (Mon-Sun)
